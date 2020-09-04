@@ -30,6 +30,9 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * A user cannot have two playlists of the same name
 * exporting variables in your environment is critical\
 on mac it looks like this:
+
 `export SPOTIFY_CLIENT_ID='YOUR_CLIENT_ID'`
+
 on windows it looks like this:
-`set SPOTIFY_CLIENT_ID='YOUR_CLIENT_ID'
+
+`set SPOTIFY_CLIENT_ID='YOUR_CLIENT_ID`
