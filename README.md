@@ -8,6 +8,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 # Instructions
 1) Install spotipy
+
 `pip3 install spotipy`
 
 2) Collect Spotify Credentials
@@ -17,6 +18,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Best results are when using SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'
 * Export SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET, SPOTIFY_REDIRECT_URI as environment variables (export ... on mac and set ... on windows)
 * Run file from command line with the title of the playlist you want to create as an argument
+
 `python3 my_top_songs.py -p PLAYLIST_NAME`
 * Input desired period of time
 
