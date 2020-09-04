@@ -7,9 +7,9 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Spotify Developer App/Client ID/Client Secret
 
 # Instructions
-1) Install spotipy
+1) Install requirements
 
-`pip3 install spotipy`
+`pip3 install -r requirements.txt`
 
 2) Collect Spotify Credentials
 * Go to your Spotify Developer Dashboard https://developer.spotify.com/dashboard/
