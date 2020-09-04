@@ -33,7 +33,12 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 on mac it looks like this:
 
 `export SPOTIFY_CLIENT_ID='YOUR_CLIENT_ID'`
+`export SPOTIFY_CLIENT_SECRET='YOUR_CLIENT_SECRET'`
+`export SPOTIFY_REDIRECT_URI='http://localhost:8888/callback/'` (That is URI with an I not an L)
 
 on windows it looks like this:
 
 `set SPOTIFY_CLIENT_ID='YOUR_CLIENT_ID`
+`set SPOTIFY_CLIENT_SECRET='YOUR_CLIENT_SECRET'`
+`set SPOTIFY_REDIRECT_URI='http://localhost:8888/callback/'` (That is URI with an I not an L)
+
