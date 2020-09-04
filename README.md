@@ -1,4 +1,4 @@
-# spotify_project
+# Spotify User's Most Listened To
 Utilizes Spotipy and Spotify Web API to create playlists of a users's most listened to songs for a certain period of time.
 
 ## Requirements
