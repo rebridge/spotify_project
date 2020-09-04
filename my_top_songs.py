@@ -1,5 +1,6 @@
+# pip3 install requirements.txt
 # Shows the top tracks for a user
-# Exports
+# Exports: SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
 # Cannot have two playlists of the same name
 import sys
 import argparse
