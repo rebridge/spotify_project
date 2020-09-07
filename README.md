@@ -16,8 +16,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Register a new app
 * Collect Client ID and Client Secret (recommended to put into secrets.py file along with redirect uri)
 * Click the Edit Settings and add your desired Redirect URI (recommended is http://localhost:8888/callback/) to the Redirect URI section. This has to match the Redirect URI you have in your secret.py file in order to avoid an Invalid URI error
-* Best results are when using SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'
-* Add Client ID and Client Secrets to secrets.txt or export as environment variables using Export SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI as environment variables (export ... on mac and set ... on windows)
+* Add Client ID and Client Secrets to secrets.txt (Best results are when using `SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'`)
 * Run file from command line with the title of the playlist you want to create as an argument
 
 `python3 my_top_songs.py -p PLAYLIST_NAME`
@@ -29,26 +28,3 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 # Troubleshooting
 * A user cannot have two playlists of the same name
-* exporting variables in your environment is critical
-
-* on mac it looks like this:
-
-`export SPOTIPY_CLIENT_ID='YOUR_CLIENT_ID'`
-
-`export SPOTIPY_CLIENT_SECRET='YOUR_CLIENT_SECRET'`
-
-`export SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'`
-
-(That is URI with an I not an L)
-
-* on windows it looks like this:
-
-`set SPOTIPY_CLIENT_ID='YOUR_CLIENT_ID`
-
-`set SPOTIPY_CLIENT_SECRET='YOUR_CLIENT_SECRET'`
-
-`set SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'` 
-
-(That is URI with an I not an L)
-
-* An alternative to exporting the environment variables is added your Client ID and Client Secret to the provided secrets.txt file. This ensures that the variables are set properly (Recommended)
