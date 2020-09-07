@@ -19,7 +19,7 @@ def get_args():
     return parser.parse_args()
 
 def set_sp(scope):
-    OAuth = SpotifyOAuth(client_id = 'baee6eacf34c4979a1814c12fd952592', client_secret = 'b9f25a061b1a4652a0001a84518d07a4', scope=scope,
+    OAuth = SpotifyOAuth(scope=scope,
                         redirect_uri='http://localhost:8888/callback/',
                         cache_path='../cache.txt')
     #token = OAuth.get_cached_token()
