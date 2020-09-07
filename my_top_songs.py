@@ -25,8 +25,7 @@ def get_args():
 
 def set_sp(scope):
     OAuth = SpotifyOAuth(client_id = client_id, client_secret = client_secret, scope=scope,
-                        redirect_uri = redirect_uri,
-                        cache_path='../cache.txt')
+                        redirect_uri = redirect_uri, cache_path = '../cache.txt')
     #token = OAuth.get_cached_token()
     sp = spotipy.Spotify(auth_manager=OAuth)
     return sp
