@@ -1,6 +1,9 @@
 # pip3 install requirements.txt
 # Shows the top tracks for a user
-# Exports: SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+# Exports:
+#   export SPOTIPY_CLIENT_ID=client_id_here
+#   export SPOTIPY_CLIENT_SECRET=client_secret_here
+#   export SPOTIPY_REDIRECT_URI=redirect_uri_here
 # Cannot have two playlists of the same name
 import sys
 import argparse
@@ -16,7 +19,7 @@ def get_args():
     return parser.parse_args()
 
 def set_sp(scope):
-    OAuth = SpotifyOAuth(scope=scope,
+    OAuth = SpotifyOAuth(client_id = 'baee6eacf34c4979a1814c12fd952592', client_secret = 'b9f25a061b1a4652a0001a84518d07a4', scope=scope,
                         redirect_uri='http://localhost:8888/callback/',
                         cache_path='../cache.txt')
     #token = OAuth.get_cached_token()
