@@ -17,7 +17,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Collect Client ID and Client Secret (recommended to put into a saved text file along with redirect uri)
 * Best results are when using SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'
 * Add Client ID and Client Secrets to secrets.txt
-  could also export as environment variables using Export SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI as environment variables (export ... on mac and set ... on windows)
+  ** could also export as environment variables using Export SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI as environment variables (export ... on mac and set ... on windows)
 * Run file from command line with the title of the playlist you want to create as an argument
 
 `python3 my_top_songs.py -p PLAYLIST_NAME`
