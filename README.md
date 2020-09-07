@@ -14,7 +14,8 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 2) Collect Spotify Credentials
 * Go to your Spotify Developer Dashboard https://developer.spotify.com/dashboard/
 * Register a new app
-* Collect Client ID and Client Secret (recommended to put into a saved text file along with redirect uri)
+* Collect Client ID and Client Secret (recommended to put into secrets.py file along with redirect uri)
+* Click the Edit Settings and add your desired Redirect URI (recommended is http://localhost:8888/callback/) to the Redirect URI section. This has to match the Redirect URI you have in your secret.py file in order to avoid an Invalid URI error
 * Best results are when using SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'
 * Add Client ID and Client Secrets to secrets.txt or export as environment variables using Export SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI as environment variables (export ... on mac and set ... on windows)
 * Run file from command line with the title of the playlist you want to create as an argument
