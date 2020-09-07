@@ -28,7 +28,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 # Troubleshooting
 * A user cannot have two playlists of the same name
-* exporting variables in your environment is critical\
+* exporting variables in your environment is critical
 
 * on mac it looks like this:
 
@@ -50,3 +50,4 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 (That is URI with an I not an L)
 
+* An alternative to exporting the environment variables is added your Client ID and Client Secret to the provided secrets.txt file. This ensures that the variables are set properly
