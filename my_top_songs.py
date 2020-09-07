@@ -11,6 +11,11 @@ import logging
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import datetime
+from secrets import SPOTIPY_CLIENT_ID, SPOTIPY_CLIENT_SECRET, SPOTIPY_REDIRECT_URI
+
+client_id = SPOTIPY_CLIENT_ID
+client_secret = SPOTIPY_CLIENT_SECRET
+redirect_uri = SPOTIPY_REDIRECT_URI
 
 def get_args():
     parser = argparse.ArgumentParser(description='Adds track to user playlist')
@@ -19,8 +24,8 @@ def get_args():
     return parser.parse_args()
 
 def set_sp(scope):
-    OAuth = SpotifyOAuth(client_id = 'baee6eacf34c4979a1814c12fd952592', client_secret = 'b9f25a061b1a4652a0001a84518d07a4', scope=scope,
-                        redirect_uri='http://localhost:8888/callback/',
+    OAuth = SpotifyOAuth(client_id = client_id, client_secret = client_secret, scope=scope,
+                        redirect_uri = redirect_uri,
                         cache_path='../cache.txt')
     #token = OAuth.get_cached_token()
     sp = spotipy.Spotify(auth_manager=OAuth)
