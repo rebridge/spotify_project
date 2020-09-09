@@ -16,7 +16,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Register a new app
 * Collect Client ID and Client Secret (recommended to put into secrets.py file along with redirect uri)
 * Click the Edit Settings and add your desired Redirect URI (recommended is http://localhost:8888/callback/) to the Redirect URI section. This has to match the Redirect URI you have in your secret.py file in order to avoid an Invalid URI error
-* Add Client ID and Client Secrets to secrets.txt (Best results are when using `SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'`)
+* Add Client ID and Client Secrets to secrets.py (Best results are when using `SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'`)
 * Run file from command line with the title of the playlist you want to create as an argument
 
 `python3 my_top_songs.py -p PLAYLIST_NAME`
