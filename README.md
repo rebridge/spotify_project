@@ -25,6 +25,7 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 ## ToDo
 * Create GUI
 * Add additional functionality
+* Add option for text file
 
 # Troubleshooting
 * A user cannot have two playlists of the same name
