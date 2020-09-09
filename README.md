@@ -19,8 +19,8 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Add Client ID and Client Secrets to secrets.py (Best results are when using `SPOTIPY_REDIRECT_URI='http://localhost:8888/callback/'`)
 * Run file from command line with the title of the playlist you want to create as an argument
 
-`python3 my_top_songs.py -p PLAYLIST_NAME`
-* Input desired period of time
+`python3 my_top_songs.py -p PLAYLIST_NAME -t TIME_RANGE`
+* Input desired range of time as either `short`, `medium`, or `long`
 
 ## ToDo
 * Create GUI
