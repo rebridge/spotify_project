@@ -21,6 +21,8 @@ def get_args():
     parser = argparse.ArgumentParser(description='Adds track to user playlist')
     parser.add_argument('-p', '--playlist', required=True,
                         help='Playlist to add track to')
+    parser.add_argument('-t', '--time', required=True,
+                        help='Time Range for songs')
     return parser.parse_args()
 
 def set_sp(scope):
@@ -36,8 +38,13 @@ def main():
 
 def create_user_record_playlist(args):
     sp = set_sp('user-top-read')
-    user_range = str(input('short (4 weeks), medium (6 months), or long (years) term?: '))
+    #user_range = str(input('short (4 weeks), medium (6 months), or long (years) term?: '))
     print()
+    
+    
+    # To-Do: Add variance in number of songs to add
+
+    user_range = args.time
     if user_range == 'short':
         ranges = [user_range]
     elif user_range == 'medium':
@@ -46,16 +53,6 @@ def create_user_record_playlist(args):
         ranges = ['long_term']
     else: 
         ranges = ['short_term'] #['short_term', 'medium_term', 'long_term']
-    
-    # To-Do: Add variance in number of songs to add
-
-    #user_song_limit = input('how many songs do you want?: ')
-    #try:
-    #    user_song_limit = int(user_song_limit)
-    #except ValueError:
-    #    print('please enter an integer')
-    #print()
-
     trackIDs = []
     for sp_range in ranges:
         results = sp.current_user_top_tracks(time_range=sp_range, limit=50)
