@@ -20,7 +20,8 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 * Run file from command line with the title of the playlist you want to create as an argument
 
 `python3 my_top_songs.py -p PLAYLIST_NAME -t TIME_RANGE`
-* Input desired range of time as either `short`, `medium`, or `long`
+* Input desired range of time as either `short` (4 weeks), `medium` (6 months), or `long` (All time)
+* if TIME_RANGE argument is not present the default time range is short
 
 ## ToDo
 * Create GUI
@@ -29,3 +30,9 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 # Troubleshooting
 * A user cannot have two playlists of the same name
+* INVALID_REDIRECT_URI
+** Make sure you have set the REDIRECT_URI in both secrets.py and in your Spotify Developer Application settings. Make sure they match
+* INVALID_CLIENT_ID
+** Make sure that you have added the correct CLIENT ID to secrets.py
+* INVALID_CLIENT_SECRET
+** Make sure that you have added the correct CLIENT SECRET to secrets.py
