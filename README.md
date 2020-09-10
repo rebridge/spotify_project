@@ -30,9 +30,6 @@ Utilizes Spotipy and Spotify Web API to create playlists of a users's most liste
 
 # Troubleshooting
 * A user cannot have two playlists of the same name
-* INVALID_REDIRECT_URI
-** Make sure you have set the REDIRECT_URI in both secrets.py and in your Spotify Developer Application settings. Make sure they match
-* INVALID_CLIENT_ID
-** Make sure that you have added the correct CLIENT ID to secrets.py
-* INVALID_CLIENT_SECRET
-** Make sure that you have added the correct CLIENT SECRET to secrets.py
+* INVALID_REDIRECT_URI - Make sure you have set the REDIRECT_URI in both secrets.py and in your Spotify Developer Application settings. Make sure they match
+* INVALID_CLIENT_ID - Make sure that you have added the correct CLIENT ID to secrets.py
+* INVALID_CLIENT_SECRET - Make sure that you have added the correct CLIENT SECRET to secrets.py
